@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+dubbo:
+  application:
+    name: boot-order-service-consumer
+  registry:
+    protocol: zookeeper
+    address: master:2181
+    check: false  #停用启动时检查服务注册中心是否存在
